@@ -7,7 +7,7 @@
 .header {
 	display: block;
 	height: 844px;
-	background-image: url(intro-bg.jpg);
+	background-image: url("/img/intro-bg.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top; 
