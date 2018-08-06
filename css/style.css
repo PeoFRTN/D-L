@@ -288,13 +288,14 @@
 	display: block;
 	margin: 0 auto;
 	margin-top: 30px;
-	border: 0.05em solid #0BA2DB; 
+	border: 0.1em solid #0BA2DB; 
 	border-radius: 30px; 
 	box-sizing: border-box;
 	padding: 20px;
 	width: 100%;
     max-width: 800px;
     height: auto;
+
 }
 .img-consult {
 	overflow: hidden;
