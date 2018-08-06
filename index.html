@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<script src="js/jquery-1.11.2.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<title>D.L associés</title>
 
 
@@ -158,19 +158,20 @@
 $(function() {
     var header = $(".navbar");
     var text = $(".navbar-in");
-    var logo = $(".logo");
+    var logo = $(".navElement");
   
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
+        if (scroll >= 300) {
             header.addClass("scrolled");
             text.addClass("nav-color");
+            logo.addClass("navElement-scroll");
  
 
         } else {
             header.removeClass("scrolled");
             text.removeClass("nav-color");
-
+            logo.removeClass("navElement-scroll");
         }
     });
   
