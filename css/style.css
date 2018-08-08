@@ -274,7 +274,11 @@ a:link {
 	text-align : center;
 }
 
-.prix hr {
+.content-3 h2 {
+	text-align: center;
+}
+
+.content-3 hr {
 	float: center;
 	width: 60px;
 	margin-top: 10px;
@@ -286,14 +290,12 @@ a:link {
 	color: #0BA2DB;
 }
 
-#mat {
-	max-width: 37%;
-	margin: 0 auto;
-	display: block;
-
+.card-img {
+	max-height: 300px;
 }
 #sep {
 	width: 100%;
+
 }
 *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -301,48 +303,27 @@ a:link {
   box-sizing: border-box;
 }
 
-.card-grid {
-  width:100%;
-  margin-bottom: 50px;
-}
-.card-grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.card img {
-  max-width: 100%;
-}
-
-.card-wrap {
-  float:left;
-  width: 100%;
-  padding:5px;
-}
-.card {
-  background-color: #fff;
-  border-radius:5px;
-  border:1px solid #ccc;
-  border-bottom:2px solid #ccc;
+.grid1 {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	grid-row-gap: 0.5em;
+	margin: 10px 20px 20px 20px;
 
 }
-.card > div {
-  padding:0 1em;
-}
-@media (min-width: 500px) {
-  .card-wrap {
-    width:50%;
-  }
-}
-@media (min-width: 720px) {
-  .card-wrap {
-    width:25%;
-  }
-}
 
-
-
+.grid1 img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+  border: 0.2em solid #f9f9f9;
+}
+.grid1 h4 {
+	text-align: center;
+}
+.grid1 p {
+	text-align: left;
+	padding-right: 5px;
+}
 
 
 .contact {
@@ -537,7 +518,12 @@ background: #394D61;
 	font-size: 12px;
 
 	}
-   }
+
+
+
+
+}
+   
 
 
 
