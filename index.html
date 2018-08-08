@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="main.js"></script>
 	<script src="js/jquery-1.11.2.min.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<title>Distribution GDL</title>
 
@@ -54,10 +56,10 @@
 	</div>
 
 
-	<h1 class="main-txt-header animated fadeInDown">Distribution GDL</h1>
+	<h1 class="main-txt-header animated fadeInDown">Distribution<br> GDL</h1>
 	<h2 class="sub-txt-header">Plomberie, luminaires, fenêstrations et plus!</h2>
 	<div class="button-container">
-	<a href="#" class="button">EN SAVOIR PLUS</a>
+	<a href="#apropos" class="button">EN SAVOIR PLUS</a>
 	</div>
 </div>
 
@@ -103,6 +105,43 @@
 					<h2>Notre équipe s'occupe de vous!</h2>
 
 				</div>	
+        <div class="services-grid">
+          <div class="ser1">
+              <img src="img/pencil.svg">
+              <h1>Soumission</h1>
+              <h2>Notre équipe vous soumettra une version électronique de votre commande</h2>
+          </div>
+          <div class="ser2">
+            <img src="img/clock.svg">
+            <h1>Livraison</h1>
+            <h2>Les plages horaires sont précises et vous recevrez un appel confirmant votre livraison</h2>
+          </div>
+          <div class="ser3">
+            <img src="img/phone.svg">
+            <h1>Communication</h1>
+            <h2>Une question? Notre équipe se fera le plaisir de vous répondre</h2>
+          </div>
+          <div class="ser4">
+              <img src="img/gear.svg">
+              <h1>Installation</h1>
+              <h2>Un service hors-père qui comprend notre expertise, des manuels des détaillants et autres</h2>
+
+          </div>
+          <div class="ser5">
+            <img src="img/profile.svg">
+            <h1>Approche personnalisée</h1>
+            <h2>Vous désirez une commande plus particulière? Demandez plus de détails concernant nos produits en nous envoyant un courriel</h2>
+          </div>
+          <div class="ser6">
+            <img src="img/tools.svg">
+            <h1>Expertise</h1>
+            <h2> Avec plusieurs formations, notre équipe s'assure d'être à la hauteur de vos attentes</h2>
+          </div>
+          
+
+
+
+        </div>
 	</div>
 
 	<div id="produits" class="content-3">
@@ -329,22 +368,10 @@ $(function() {
             header.removeClass("scrolled");
             text.removeClass("nav-color");
             logo.removeClass("navElement-scroll");
-        }
+        };
     });
   
 });
-
-$('a[href^="#"]').on('click', function(event) {
-	var target = $(this.getAttribute('href'));
-	if( target.length ) {
-		event.preventDefault();
-		$('html, body').stop().animate({
-			scrollTop: target.offset().top+
-		}, 1000);
-	}
-})
-
-
 </script>
 
 

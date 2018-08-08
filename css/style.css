@@ -118,7 +118,7 @@ a:link {
 
 .sub-txt-header {
 	
-	margin-top: 120px;
+	margin-top: 100px;
 	font-size: 26px;
 	text-align :center;
 	position: relative;
@@ -146,7 +146,6 @@ a:link {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-   
     cursor: pointer;
     float: center;
 
@@ -159,20 +158,20 @@ a:link {
 	padding-top: 60px;
 }
 .content-2 {
-	height: 800px;
+	height: auto;
 	background-color: #eef0f2;
-	padding-top: 60px;
+		padding-top: 60px;
 }
 .content-3 {
 	height: auto;
 	background-color: #fff;
-	padding-top: 60px;
+		padding-top: 60px;
 }
 .content-4 {
 	height: 1000px;
 	background-color: #eef0f2;
 	padding-bottom: 30px;
-	padding-top: 60px;
+		padding-top: 60px;
 }
 
 
@@ -234,7 +233,35 @@ a:link {
 	font-size: 18px;
 }
 
+.services-grid {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 
+}
+
+.services-grid > div {
+	padding: 10px 10px 10px 10px;
+}
+.services-grid img {
+	display: block;
+	margin: 0 auto;
+}
+
+.services-grid h1 {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 10px;
+
+}
+
+.services-grid h2 {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+}
 
 .prix {
 	background-color: none;
@@ -263,6 +290,7 @@ a:link {
 	max-width: 37%;
 	margin: 0 auto;
 	display: block;
+
 }
 #sep {
 	width: 100%;
@@ -369,6 +397,7 @@ a:link {
 
 }
 .about-content h1 {
+	padding-top: 45px;
 	font-size: 32px;
 	text-align: center;
 
@@ -487,9 +516,10 @@ background: #394D61;
     	font-size: 18px;
     }
 	.main-txt-header {
-		font-size: 41px;
+		font-size: 3.5rem;
 		text-align :center;
 		position: relative;
+		overflow: hidden;
 		top: 50%;
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
@@ -497,7 +527,17 @@ background: #394D61;
 		
 	}
 
-    }
+	.services-grid h1 {
+
+	font-size: 18px;
+
+	}
+	.services-grid h2 {
+
+	font-size: 12px;
+
+	}
+   }
 
 
 

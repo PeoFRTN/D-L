@@ -1,8 +1,16 @@
 
-//auto expand textarea
-/*$(function adjust_textarea(h) {
-    h.style.height = "50px";
-    h.style.height = (h.scrollHeight)+"px";
+
+$('a[href^="#"]').on('click', function(e) {
+	var target = $(this.getAttribute('href'));
+	if( target.length ) {
+		e.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top+
+		}, 1000);
+	};
 });
-*/
+
+
+
+
 
