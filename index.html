@@ -34,17 +34,17 @@
 			</div>
 
 			<div class="navElement">
-				<h2 class="animated fadeInDown">CONTACT</h2>
+				<a href="#contact"><h2 class="animated fadeInDown">CONTACT</h2></a>
 			</div>
 
 			<div class="navElement">
-				<h2 class="animated fadeInDown">PRODUITS</h2>
+				<a href="#produits"><h2 class="animated fadeInDown">PRODUITS</h2></a>
 			</div>
 			<div class="navElement">
-				<h2 class="animated fadeInDown">SERVICES</h2>
+				<a href="#services"><h2 class="animated fadeInDown">SERVICES</h2></a>
 			</div>
 			<div class="navElement">
-				<h2 class="animated fadeInDown">À PROPOS</h2>
+				<a href="#apropos"><h2 class="animated fadeInDown">À PROPOS</h2></a>
 			</div>
 
 
@@ -65,7 +65,7 @@
 
 <div class="main">
 	
-	<div class="content-1">
+	<div id="apropos" class="content-1">
 					<h1>À Propos</h1>
 					<hr>
 				<div class="about">
@@ -94,7 +94,7 @@
 	
 	</div>
 
-	<div class="content-2">
+	<div id="services" class="content-2">
 
 				<div class="services">
 					
@@ -105,7 +105,7 @@
 				</div>	
 	</div>
 
-	<div class="content-3">
+	<div id="produits" class="content-3">
 
 				<div class="prix">
 					
@@ -213,7 +213,7 @@
   
   <div class="card-wrap">
     <div class="card">
-      <img src="chauffant/0Y6H2169.jpg" class="card-img"/>
+      <img src="chauffant/IMG_0035.jpg" class="card-img"/>
       <div>
         <h4>Câble</h4>
         <p>Les planchers chauffants fournissent une chaleur suffisante pour s'assurer
@@ -233,7 +233,7 @@
   </div>
   <div class="card-wrap">
     <div class="card">
-      <img src="chauffant/IMG_9939 (1).jpg" class="card-img"/>
+      <img src="chauffant/0Y6H2169.jpg" class="card-img"/>
       <div>
         <h4>Blanc</h4>
         <p>Les planchers chauffants fournissent une chaleur suffisante pour s'assurer
@@ -253,6 +253,17 @@
       </div>
     </div>
   </div>
+  <div class="card-wrap">
+    <div class="card">
+      <img src="chauffant/IMG_9939 (1).jpg" class="card-img"/>
+      <div>
+        <h4>Blanc</h4>
+        <p>Les planchers chauffants fournissent une chaleur suffisante pour s'assurer
+        d'être confortable à longueur d'année!
+         </p>
+      </div>
+    </div>
+  </div>
 
 	
 
@@ -261,7 +272,7 @@
 
 	</div>
 
-	<div class="content-4">
+	<div id="contact" class="content-4">
 
 			<div class="contact">
 					
@@ -322,6 +333,16 @@ $(function() {
     });
   
 });
+
+$('a[href^="#"]').on('click', function(event) {
+	var target = $(this.getAttribute('href'));
+	if( target.length ) {
+		event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top+
+		}, 1000);
+	}
+})
 
 
 </script>
