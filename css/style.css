@@ -490,6 +490,31 @@ background: #394D61;
         "text";
     
     }
+    .logo {
+    	margin-top: 0;
+    }
+
+    .logo img {
+	max-width: 28px;
+	max-height: auto;
+	display: block;
+	float: left;
+	margin-top: 0;
+	}
+	.logo p {
+	line-height: 27px;
+	margin-top: 0;
+	color: #585858;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	font-size: 24px;
+
+}
+
+    .navbar {
+    	height: 60px;
+    }
 
     .navElement {
 		display: none;
