@@ -270,12 +270,12 @@
 }
 
 .card img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 .card-wrap {
   float:left;
-  width:100%;
+  width: 100%;
   padding:5px;
 }
 .card {
