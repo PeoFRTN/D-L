@@ -554,7 +554,7 @@ background: #394D61;
 
 	}
 	.grid1 img {
-	  max-width: 200px;
+	  max-width: 180px;
   	display: block;
  	 margin: 0 auto;
  	 float: left;
@@ -566,9 +566,12 @@ background: #394D61;
 		padding-left: 25px;
 		max-width: 50%;
 		margin-left: 25%;
-		margin-right: 25%;
+		margin-right: 40%;
 		font-size: 12px;
 		text-align: left;
+		width: 400px;
+		height: 100px;
+
 
 	}
 	.grid1 h4 {
