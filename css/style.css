@@ -486,9 +486,17 @@ background: #394D61;
 
 }
 
+footer {
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+	background-color: #fff;
+	color: #0BA2DB;
+}
 
 
-    @media only screen and (max-width: 840px)  {
+
+    @media only screen and (max-width: 834px)  {
     .about {
 
         grid-template-columns: 1fr;
