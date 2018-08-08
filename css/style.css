@@ -338,10 +338,17 @@ a:link {
 }
 
 .contact h2 {
+
 	text-align: center;
 	font-size: 16px;
 	padding-top: 18px;
 	padding-bottom: 20px;
+}
+
+.contact h3 {
+	text-align: center;
+	font-size: 16px;
+	color: #0BA2DB;
 }
 
 .contact hr {
