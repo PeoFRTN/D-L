@@ -372,6 +372,7 @@ a:link {
 	overflow: hidden;
 	position: center;
 	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .about-content {
