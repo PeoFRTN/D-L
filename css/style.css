@@ -446,7 +446,7 @@ a:link {
     width: 360px;
     overflow: hidden;
     resize:none;
-    height:20px;
+    height:70px;
 }
 
 .form textarea:focus, 
