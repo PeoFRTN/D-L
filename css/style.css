@@ -2,6 +2,11 @@
 	margin: 0;
 	padding:0;
 	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
 	 -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -60,6 +65,13 @@ a:link {
 
   transition: 0.5s;
 }
+
+.open-slide {
+	float: right;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	display: none;
+}
 .logo {
 	display: inline-block;
 	line-height: 60px;
@@ -81,6 +93,7 @@ a:link {
 	font-size: 30px;
 
 }
+
 
 
 .navElement {
@@ -108,17 +121,18 @@ a:link {
 	font-size: 82px;
 	text-align :center;
 	position: relative;
-	top: 50%;
+	top: 30%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+
 
 }
 
 
 .sub-txt-header {
 	
-	margin-top: 100px;
+	
 	font-size: 26px;
 	text-align :center;
 	position: relative;
@@ -278,7 +292,7 @@ a:link {
 	text-align: center;
 }
 
-.content-3 hr {
+ hr {
 	float: center;
 	width: 60px;
 	margin-top: 10px;
@@ -293,7 +307,7 @@ a:link {
 .card-img {
 	max-height: 300px;
 }
-#sep {
+.sep {
 	width: 100%;
 
 }
@@ -528,6 +542,11 @@ footer {
 
 }
 
+		
+	.open-slide {
+		display: block;
+	}
+
     .navbar {
     	height: 60px;
     }
@@ -538,14 +557,15 @@ footer {
     	}   
 
     .sub-txt-header {
+    	margin-top: 75px;
     	font-size: 18px;
     }
 	.main-txt-header {
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 		text-align :center;
 		position: relative;
 		overflow: hidden;
-		top: 50%;
+		top: 30%;
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
@@ -597,16 +617,103 @@ footer {
 	}
 
 
-	.form{
-    width: 100%;
-	margin: auto;
 
-
-}
 
 }
    
 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
+
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background: #eef0f2;
+	padding:25px;
+	margin:50px 0;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height: 150px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
 
 
 
