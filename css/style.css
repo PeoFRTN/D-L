@@ -448,13 +448,18 @@ span:hover {
 
 footer {
 	width: 100%;
-	height: 20px;
-	text-align: right;
+	height: 15px;
 	font-size: 12px;
 	background-color: #fff;
 	color: #0BA2DB;
 	bottom: 0;
+
 }
+footer h4 {
+	font-size: 12px;
+	text-align: center;
+}
+
 
 
 
@@ -636,7 +641,7 @@ fieldset {
 #contact textarea {
 	height: 150px;
 	max-width:100%;
-  resize:none;
+  	resize:none;
 }
 
 #contact button[type="submit"] {
@@ -651,7 +656,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background:#0BA2DB;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
