@@ -21,7 +21,7 @@ a:link {
 
 .header {
 	display: block;
-	height: 844px;
+	height: 100vh;
 	background-image: url("../img/intro-bg.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -50,6 +50,24 @@ a:link {
 	max-width: 1100px;
 
 }
+.navbar-prod {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: hidden;
+	max-width: 1100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+
+.navbar-prod h2 {
+	background-color: #eef0f2;
+	border-radius: 12px;
+}
+
 
 .nav-color {
 	color: #5A5A5A;
@@ -181,13 +199,14 @@ a:link {
 .content-3 {
 	height: auto;
 	background-color: #fff;
-		
+		padding-top: 60px;
 }
 .content-4 {
-	height: 1000px;
+	margin-top: 0;
+	height: 100%;
 	background-color: #eef0f2;
-	padding-bottom: 30px;
-		padding-top: 60px;
+	padding-bottom: 10px;
+	
 }
 
 
@@ -287,6 +306,7 @@ a:link {
 	padding-top: 60px;
 }
 .prix h2 {
+	padding-top: 5px;
 	text-align : center;
 }
 
@@ -346,11 +366,11 @@ a:link {
 
 
 .contact {
-	background-color: none;
+	background-color: inherit;
 }
 .contact h1 {
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 .contact h2 {
@@ -417,102 +437,21 @@ a:link {
 
 }
 
-.form{
-    width: 520px;
-	margin: auto;
-    font-size: 16px;
-    background: #FFFFFF;
-    padding: 30px 30px 30px 30px;
-    border-radius: 12px;
 
-}
-.form button[type=submit],
-.form input[type=button],
-.form input[type=text],
-.form input[type=email],
-.form textarea,
-.form label
-{
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 16px;
-    color: black;
-    padding: 5px;
-
-}
-.form label {
-    display:block;
-    margin-bottom: 10px;
-}
-.form label > span{
-    display: inline-block;
-    float: left;
-    width: 150px;
-}
-.form input[type=text],
-.form input[type=email] 
-{
-    background: transparent;
-    border: none;
-    border-bottom: 1px dashed #83A4C5;
-    width: 360px;
-    outline: none;
-    padding: 0px 0px 0px 0px;
-    font-style: italic;
-}
-.form textarea{
-    font-style: italic;
-    padding: 0px 0px 0px 0px;
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1px dashed #83A4C5;
-    width: 360px;
-    overflow: hidden;
-    resize:none;
-    height:70px;
-}
-
-.form textarea:focus, 
-.form input[type=text]:focus,
-.form input[type=email]:focus,
-.form input[type=email] :focus
-{
-    border-bottom: 1px dashed #D9FFA9;
-}
-
-.form button[type=submit],
-.form input[type=button]{
-    background: #0BA2DB;
-    border: none;
-    padding: 8px 10px 8px 10px;
-    border-radius: 5px;
-    color: #f0f0f0;
-}
-.form button[type=submit]:hover,
-.form input[type=button]:hover{
-background: #394D61;
-}
-
-.form-input {
-	display: flex;
-	margin-top: 30px;
-	overflow: hidden;
-
-
-
-}
 
 footer {
 	width: 100%;
+	height: 20px;
 	text-align: right;
 	font-size: 12px;
 	background-color: #fff;
 	color: #0BA2DB;
+	bottom: 0;
 }
 
 
 
-    @media only screen and (max-width: 700px)  {
+    @media only screen and (max-width: 750px)  {
     .about {
 
         grid-template-columns: 1fr;
@@ -648,7 +587,7 @@ footer {
 #contact {
 	background: #eef0f2;
 	padding:25px;
-	margin:50px 0;
+	margin:0 0;
 }
 
 fieldset {
