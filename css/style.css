@@ -504,7 +504,7 @@ footer {
 
 	
     .sub-txt-header {
-    	margin-top: 75px;
+    	margin-top: 10px;
     	font-size: 18px;
     	margin-left: 5px;
     	margin-right: 5px;
@@ -514,7 +514,7 @@ footer {
 		text-align :center;
 		position: relative;
 		overflow: hidden;
-		top: 30%;
+		top: 40%;
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
