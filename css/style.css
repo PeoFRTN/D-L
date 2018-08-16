@@ -789,8 +789,10 @@ fieldset {
 
 
 .side-nav a:hover{
-	color: #F5B8B8;
+	color: #0BA2DB;
+	cursor: pointer;
 }
+
 
 .side-nav .btn-close{
 	position: absolute;
