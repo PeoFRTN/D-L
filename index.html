@@ -35,6 +35,18 @@
 				<p>DISTRIBUTION GDL</p>
 			</div>
 
+            <span class="open-slide">
+                        <a href="#" onclick="openSlideMenu()">
+
+                             <svg width="30" height="30">
+
+                                <path d="M0,2 30,2" stroke="white" stroke-width="4"/>
+                                <path d="M0,11 30,11" stroke="white" stroke-width="4"/>
+                                <path d="M0,20 30,20" stroke="white" stroke-width="4"/>
+
+                             </svg>
+                        </a>
+            </span>
 
 
 			<div class="navElement">
@@ -51,6 +63,23 @@
 				<a href="#apropos"><h2 class="animated fadeInDown">À PROPOS</h2></a>
 			</div>
 
+
+
+            <!-- side nav !-->
+
+            <div id="side-menu" class="side-nav">
+
+                <a href="#apropos">À Propos</a>
+
+
+
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="#services">Services</a>
+                <a href="produits.html">Produits</a>
+                <a href="#contact">Contact</a>
+
+
+            </div>
 
 
 		</div>
@@ -227,7 +256,15 @@
 
 <script>
 
+                        function openSlideMenu(){
+                            document.getElementById("side-menu").style.width = "250px";
 
+                        }
+                        function closeSlideMenu(){
+                            document.getElementById("side-menu").style.width = "0";
+                          
+
+                        }
 
 	
 $(function() {

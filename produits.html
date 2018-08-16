@@ -27,7 +27,7 @@
 <!-- DÉBUT DU NAVBAR !-->
 <div class="header">
 
-	<div class="navbar">
+	<div id="header" class="navbar">
 
 		<div class="navbar-in">
 
@@ -35,6 +35,19 @@
 				<img src="img/planning.svg" alt="" >
 				<p>DISTRIBUTION GDL</p>
 			</div>
+
+                        <span class="open-slide">
+                        <a href="#" onclick="openSlideMenu()">
+
+                             <svg width="30" height="30">
+
+                                <path d="M0,2 30,2" stroke="white" stroke-width="4"/>
+                                <path d="M0,11 30,11" stroke="white" stroke-width="4"/>
+                                <path d="M0,20 30,20" stroke="white" stroke-width="4"/>
+
+                             </svg>
+                        </a>
+            </span>
 
 
 
@@ -52,6 +65,24 @@
 				<a href="index.html"><h2 class="animated fadeInDown">À PROPOS</h2></a>
 			</div>
 
+
+            <!-- side nav !-->
+
+            <div id="side-menu" class="side-nav">
+
+                <a href="#lum">Luminaires</a>
+
+
+
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="#cuisine">Cuisine</a>
+                <a href="#plancher">Planchers</a>
+                <a href="#ceramique">Céramique</a>
+                <a href="#electronique">Électroniques</a>
+                <a href="#autre">Autres</a>
+
+
+            </div>
 
 
 		</div>
@@ -91,20 +122,20 @@
                         </div>
 
                         <div class="navElement">
-                            <a href="#produits"><h2>CÉRAMIQUE</h2></a>
+                            <a href="#ceramique"><h2>CÉRAMIQUE</h2></a>
                         </div>
                         <div class="navElement">
                             <a href="#cuisine"><h2>CUISINE</h2></a>
                         </div>
                         <div class="navElement">
-                            <a href="index.html"><h2>PLANCHERS</h2></a>
+                            <a href="#plancher"><h2>PLANCHERS</h2></a>
                         </div>
                         <div class="navElement">
-                            <a href="index.html"><h2>ÉLECTRONIQUES</h2></a>
+                            <a href="#electronique"><h2>ÉLECTRONIQUES</h2></a>
                         </div>
 
                         <div class="navElement">
-                            <a href="#produits"><h2>AUTRES</h2></a>
+                            <a href="#autre"><h2>AUTRES</h2></a>
                         </div>
                        
 
@@ -121,7 +152,7 @@
 
 				
 				<!-- DÉBUT FIRST GRID!-->	
-<div class="grid1">
+<div id="autre" class="grid1">
     <div class="pg">
             <img class="myImg" src="poignees/DT1103-SN.jpg" alt="" class="card-img"/>
             <h4>id: DT1103-SN</h4>
@@ -159,7 +190,7 @@
 
         
         <!-- DÉBUT SECOND GRID!--> 
-  <div class="grid1">
+  <div id="plancher" class="grid1">
 
    <div class="pg">
             <img class="myImg" src="mat/cable1.jpg" alt="" class="card-img"/>
@@ -233,7 +264,7 @@
 
         
         <!-- DÉBUT THIRD GRID!--> 
-  <div class="grid1">
+  <div id="ceramique" class="grid1">
 
    <div class="pg">
             <img class="myImg" src="ceramique/2-MKG612574+.jpg" alt="" class="card-img"/>
@@ -299,13 +330,13 @@
   </div>
           <hr class="sep">
           
-        <h2>Thermostat</h2>
+        <h2>Électroniques</h2>
    
         <br> <br>
 
         
         <!-- DÉBUT SECOND GRID!--> 
-  <div class="grid1">
+  <div id="electronique" class="grid1">
 
    <div class="pg">
             <img class="myImg" src="thermo/GM4.jpg" alt="" class="card-img"/>
@@ -473,6 +504,15 @@
 
 
 <script>
+
+    function openSlideMenu(){
+     document.getElementById("side-menu").style.width = "250px";
+
+         }
+    function closeSlideMenu(){
+     document.getElementById("side-menu").style.width = "0";
+    
+    }  
 
 
 

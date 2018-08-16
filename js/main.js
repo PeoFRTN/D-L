@@ -1,5 +1,4 @@
 
-
 $('a[href^="#"]').on('click', function(e) {
 	var target = $(this.getAttribute('href'));
 	if( target.length ) {
@@ -9,8 +8,4 @@ $('a[href^="#"]').on('click', function(e) {
 		}, 1000);
 	};
 });
-
-
-
-
 
