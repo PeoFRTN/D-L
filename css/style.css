@@ -575,7 +575,9 @@ footer {
 		float: left;
 	}
 
-
+	#sepa {
+		display: none;
+	}
 
 
 }
