@@ -159,7 +159,7 @@ span:hover {
 
 .sub-txt-header {
 	
-	
+	margin-top: 70px;
 	font-size: 26px;
 	text-align :center;
 	position: relative;
@@ -172,7 +172,7 @@ span:hover {
 .button-container {
 	text-align: center;
 	position: relative;
-	top: 55%;
+	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -189,6 +189,12 @@ span:hover {
     font-size: 20px;
     cursor: pointer;
     float: center;
+    transition: 0.8s;
+
+}
+.button:hover {
+    opacity: 0.8;
+    border-radius: 11px;
 
 }
 

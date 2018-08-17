@@ -259,36 +259,33 @@
 
 <script>
 
-                        function openSlideMenu(){
-                            document.getElementById("side-menu").style.width = "250px";
-
-                        }
-                        function closeSlideMenu(){
-                            document.getElementById("side-menu").style.width = "0";
-                          
-
-                        }
+  function openSlideMenu(){
+      document.getElementById("side-menu").style.width = "250px";
+    }
+  function closeSlideMenu(){
+      document.getElementById("side-menu").style.width = "0";
+    }
 
 	
-$(function() {
-    var header = $(".navbar");
-    var text = $(".navbar-in");
-    var logo = $(".navElement");
-  
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 300) {
-            header.addClass("scrolled");
-            text.addClass("nav-color");
-            logo.addClass("navElement-scroll");
- 
+    $(function() {
+        var header = $(".navbar");
+        var text = $(".navbar-in");
+        var logo = $(".navElement");
+      
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 250) {
+                header.addClass("scrolled");
+                text.addClass("nav-color");
+                logo.addClass("navElement-scroll");
+     
 
-        } else {
-            header.removeClass("scrolled");
-            text.removeClass("nav-color");
-            logo.removeClass("navElement-scroll");
-        };
-    });
+            } else {
+                header.removeClass("scrolled");
+                text.removeClass("nav-color");
+                logo.removeClass("navElement-scroll");
+            };
+        });
   
 });
 </script>
