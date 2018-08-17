@@ -352,6 +352,7 @@ span:hover {
 	grid-row-gap: 0.5em;
 	margin: 10px 20px 20px 20px;
 	overflow: hidden;
+	padding-bottom: 20px;
 
 }
 
