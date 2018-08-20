@@ -64,9 +64,18 @@ a:link {
 }
 
 .navbar-prod h2 {
-	background-color: #eef0f2;
-	border-radius: 12px;
+	background-color: #fff;
+	font-size: 150%;
+
 }
+.navbar-prod h2:hover {
+	background-color: #fff;
+	color: black;
+	border-bottom: solid 5px #0BA2DB;
+	transition: 0.3s;
+
+}
+
 
 
 .nav-color {
@@ -76,7 +85,9 @@ a:link {
 .navElement-scroll {
 	color: #0BA2DB;
 
+
 }
+
 
 .scrolled{
   background-color: #212121;
@@ -192,6 +203,7 @@ span:hover {
     transition: 0.8s;
 
 }
+
 .button:hover {
     opacity: 0.8;
     border-radius: 11px;
@@ -203,16 +215,18 @@ span:hover {
 	background-color: #fff;
 	padding-bottom: 30px;
 	padding-top: 60px;
+
 }
 .content-2 {
 	height: auto;
 	background-color: #eef0f2;
-		padding-top: 60px;
+	padding-top: 60px;
 }
 .content-3 {
 	height: auto;
 	background-color: #fff;
-		padding-top: 60px;
+
+
 }
 .content-4 {
 	margin-top: 0;
@@ -221,8 +235,6 @@ span:hover {
 	padding-bottom: 10px;
 	
 }
-
-
 .about {
 	background-color: none;
 	display: grid;
@@ -286,6 +298,7 @@ span:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 
+
 }
 
 .services-grid > div {
@@ -311,12 +324,16 @@ span:hover {
 
 }
 
+
+
 .prix {
 	background-color: none;
 }
 .prix h1 {
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
 }
 .prix h2 {
 	padding-top: 5px;
@@ -343,6 +360,7 @@ span:hover {
 	max-height: 300px;
 }
 .sep {
+	margin-top: 0;
 	width: 100%;
 
 }
@@ -453,6 +471,8 @@ span:hover {
 
 
 
+
+
 footer {
 	width: 100%;
 	height: 15px;
@@ -479,6 +499,12 @@ footer h4 {
         "title"
         "text";
     
+    }
+    .about-content h1 {
+    	font-size: 125%;
+    }
+    .about-content h2 {
+    	font-size: 85%;
     }
     .logo {
     	margin-top: 0;
@@ -552,40 +578,47 @@ footer h4 {
 	.services-grid h2 {
 
 	font-size: 12px;
-
+	
 
 
 	}
+
 	.pg {
 		width: 100%;
 	}
 	.grid1 img {
-	  max-width: 180px;
-  	display: block;
+	  max-width: 150px;
+  	 display: block;
  	 margin: 0 auto;
  	 float: left;
   	border: 0.2em solid #f9f9f9;
 
 	}
 	.grid1 p {
-		margin-top: 30px;
-		padding-left: 25px;
-		max-width: 50%;
-		margin-left: 0;
-		margin-right: 50%;
+		margin-top: 0px;
+		padding-left: 10px;
+		max-width: 150px;
 		font-size: 12px;
 		text-align: left;
 		width: 100%;
-
-		
-
-
+		float: left;
 	}
 	.grid1 h4 {
-		margin-left: 10px;
+		margin-left: 15px;
+		margin-right: auto;
 
 		float: left;
 	}
+	.grid1 {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+	grid-row-gap: 0.5em;
+	margin: 10px 20px 20px 20px;
+	overflow: hidden;
+	padding-bottom: 20px;
+
+}
+
 
 	#sepa {
 		display: none;
@@ -614,9 +647,9 @@ footer h4 {
 	
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contactform input[type="text"], #contactform input[type="email"], #contactform input[type="tel"], #contactform input[type="url"], #contactform textarea, #contactform button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
-#contact {
+#contactform {
 	background: #eef0f2;
 	padding:25px;
 	margin:0 0;
@@ -630,7 +663,7 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contactform input[type="text"], #contactform input[type="email"], #contactform input[type="tel"], #contactform input[type="url"], #contactform textarea {
 	width:100%;
 	border:1px solid #CCC;
 	background:#FFF;
@@ -638,20 +671,20 @@ fieldset {
 	padding:10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+#contactform input[type="text"]:hover, #contactform input[type="email"]:hover, #contactform input[type="tel"]:hover, #contactform input[type="url"]:hover, #contactform textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
 	border:1px solid #AAA;
 }
 
-#contact textarea {
+#contactform textarea {
 	height: 150px;
 	max-width:100%;
   	resize:none;
 }
 
-#contact button[type="submit"] {
+#contactform button[type="submit"] {
 	cursor:pointer;
 	width:100%;
 	border:none;
@@ -662,16 +695,16 @@ fieldset {
 	font-size:15px;
 }
 
-#contact button[type="submit"]:hover {
+#contactform button[type="submit"]:hover {
 	background:#0BA2DB;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contactform button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
-#contact input:focus, #contact textarea:focus {
+#contactform input:focus, #contactform textarea:focus {
 	outline:0;
 	border:1px solid #999;
 }
@@ -823,5 +856,6 @@ fieldset {
 	font-family: Arial;
 }
 
-
-
+.pg {
+	display: block;
+}
