@@ -152,7 +152,7 @@ a:link {
 
 
 .main-txt-header {
-	font-family: 'Garamond';
+	
 	color: #0BA2DB;
 	font-size: 82px;
 	text-align :center;
@@ -747,7 +747,7 @@ fieldset {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 99; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -767,9 +767,7 @@ fieldset {
 
     
 }
-.modal-content:hover {
-	transform: scale(1.5);
-}
+
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -881,7 +879,7 @@ fieldset {
     position: fixed; 
     bottom: 20px;
     right: 20px; 
-    z-index: 99; 
+    z-index: 98; 
     border: none; 
     outline: none; 
     background-color: #212121;
