@@ -168,6 +168,7 @@ span:hover {
 	cursor: pointer;
 }
 
+
 .sub-txt-header {
 	
 	margin-top: 70px;
@@ -294,7 +295,7 @@ span:hover {
 }
 
 .services-grid {
-	padding-top: 40px;
+	padding-top: 30px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 
@@ -395,6 +396,9 @@ span:hover {
 	padding-left: 5px;
 
 }
+.grid1 select {
+	margin-left: 10px;
+}
 
 
 .contact {
@@ -468,10 +472,6 @@ span:hover {
 	text-align: justify;
 
 }
-
-
-
-
 
 footer {
 	width: 100%;
@@ -582,6 +582,7 @@ footer h4 {
 
 
 	}
+
 
 	.pg {
 		width: 100%;
@@ -767,8 +768,6 @@ fieldset {
 
     
 }
-
-/* Caption of Modal Image */
 #caption {
     margin: auto;
     display: block;
@@ -779,15 +778,12 @@ fieldset {
     padding: 10px 0;
     height: 150px;
 }
-
-/* Add Animation */
 .modal-content, #caption {    
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
@@ -797,8 +793,6 @@ fieldset {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -808,7 +802,6 @@ fieldset {
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -869,9 +862,7 @@ fieldset {
 	font-family: Arial;
 }
 
-.pg {
-	display: block;
-}
+
 
 
 #myBtn {
@@ -899,4 +890,26 @@ fieldset {
     transition: 0.2s;
 
 
+}
+.side-nav h1 {
+	font-size: 26px;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #0BA2DB;
+}
+
+.download {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.download:hover,
+.download a:hover {
+	background-color: #0BA2DB;
+	color: #fff;
+
+}
+.download a{
+	text-align: left;
+	color: #0BA2DB;
 }
