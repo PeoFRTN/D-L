@@ -892,12 +892,13 @@ fieldset {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50%; 
-    font-size: 30px; 
+    font-size: 30px;
+
 }
 
 #myBtn:hover {
     background-color: #0BA2DB;
     transition: 0.2s;
-    transform: scale(1.20);
+
 
 }
