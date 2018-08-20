@@ -98,6 +98,7 @@
 <!-- DÉBUT DU MAIN !-->
 
 <div class="main">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 	
 	<div id="apropos" class="content-1">
 					<h1>À Propos</h1>
@@ -258,6 +259,22 @@
 
 
 <script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
   function openSlideMenu(){
       document.getElementById("side-menu").style.width = "250px";

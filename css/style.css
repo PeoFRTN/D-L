@@ -624,6 +624,18 @@ footer h4 {
 		display: none;
 	}
 
+	#myBtn {
+
+    font-size: 15px; 
+}
+
+#myBtn:hover {
+    background-color: #0BA2DB;
+    transition: 0.2s;
+    transform: scale(1.20);
+
+}
+
 
 }
    
@@ -751,10 +763,13 @@ fieldset {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 900px;
+    max-width: 100%;
+
     
 }
-
+.modal-content:hover {
+	transform: scale(1.5);
+}
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -858,4 +873,31 @@ fieldset {
 
 .pg {
 	display: block;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #212121;
+    color: #fff; 
+    cursor: pointer; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%; 
+    font-size: 30px; 
+}
+
+#myBtn:hover {
+    background-color: #0BA2DB;
+    transition: 0.2s;
+    transform: scale(1.20);
+
 }
