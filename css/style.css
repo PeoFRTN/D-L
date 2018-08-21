@@ -124,6 +124,7 @@ a:link {
 	vertical-align: top;
 	text-align: center;
 	font-size: 30px;
+	margin-left: 5px;
 
 }
 
@@ -294,7 +295,7 @@ span:hover {
 	font-size: 18px;
 }
 
-.services-grid {
+.services-grid {	
 	padding-top: 30px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -501,10 +502,10 @@ footer h4 {
     
     }
     .about-content h1 {
-    	font-size: 125%;
+    	font-size: 135%;
     }
     .about-content h2 {
-    	font-size: 85%;
+    	font-size: 95%;
     }
     .logo {
     	margin-top: 0;
