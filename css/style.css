@@ -900,6 +900,7 @@ fieldset {
 }
 
 .download {
+	height: 40px;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 5px;
