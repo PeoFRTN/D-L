@@ -360,7 +360,7 @@ span:hover {
 }
 
 .card-img {
-	max-height: 300px;
+	max-height: 100%;
 }
 .sep {
 	margin-top: 0;
@@ -487,9 +487,8 @@ footer h4 {
 	font-size: 18px;
 	text-align: center;
 	vertical-align: middle;
-	background: linear-gradient(330deg, #fff 0%, #0BA2DB 25%, #fff 50%, #0BA2DB 75%, #fff 100%);
-  	-webkit-background-clip: text;
- 	-webkit-text-fill-color: transparent;
+	color: #fff;
+	
   
 }
 
