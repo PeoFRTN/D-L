@@ -257,6 +257,9 @@ span:hover {
     color: #fff;
     transition: 0.3s;
     transform: scale(1.2);
+    -webkit-box-shadow: 0 4px 2px -2px gray;
+	-moz-box-shadow: 0 4px 2px -2px gray;
+	box-shadow: 0 4px 2px -2px gray;
 
 
 }
