@@ -6,135 +6,104 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-	<title>Distribution GDL</title>
-
-
-<!-- Bonjour ici Peo!-->
-
-
-
+	                           <title>Distribution GDL</title>
 </head>
-
-
-
-
 <body>
-<!-- DÉBUT DU NAVBAR !-->
+<!-- DÉBUT DU HEADER !-->
 <div class="header">
-
 	<div id="header" class="navbar">
-
-		<div class="navbar-in">
+        <!-- DÉBUT DU NAVBAR-IN !-->
+        <div class="navbar-in">
 
 			<div class="logo">
 				<img src="img/planning.svg" alt="" >
 				<a href="index.html"><p>DISTRIBUTION GDL</p></a>
 			</div>
 
-                        <span class="open-slide">
-                        <a  onclick="openSlideMenu()">
-
-                             <svg width="30" height="30">
-
-                                <path d="M0,2 30,2" stroke="white" stroke-width="4"/>
-                                <path d="M0,11 30,11" stroke="white" stroke-width="4"/>
-                                <path d="M0,20 30,20" stroke="white" stroke-width="4"/>
-
-                             </svg>
-                        </a>
+            <span class="open-slide">
+                <a  onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,2 30,2" stroke="white" stroke-width="4"/>
+                    <path d="M0,11 30,11" stroke="white" stroke-width="4"/>
+                    <path d="M0,20 30,20" stroke="white" stroke-width="4"/>
+                </svg>
+                </a>
             </span>
-
-
-                        <div class="navElement">
-                            <a href="#bath"><h2>BAINS</h2></a>
-                        </div>
-			            <div class="navElement">
-                            <a href="#autre"><h2>POIGNÉES</h2></a>
-                        </div>
-                        <div class="navElement">
-                            <a href="#electronique"><h2>THERMOSTATS</h2></a>
-                        </div>
-                        <div class="navElement">
-                            <a href="#plancher"><h2>PLANCHERS</h2></a>
-                        </div>
-                        <div class="navElement">
-                            <a href="#cuisine"><h2>ÉVIERS</h2></a>
-                        </div>
-                        
-                        <div class="navElement">
-                            <a href="#lum"><h2>LUMINAIRES</h2></a>
-                        </div>
-                        <div class="navElement">
-                            <a href="#ceramique"><h2>CÉRAMIQUES</h2></a>
-                        </div>
-                        <div class="navElement">
-                            <a href="#quartz"><h2>COMPTOIRS</h2></a>
-                        </div>
-
-
-            <!-- side nav !-->
-
-            <div id="side-menu" class="side-nav">
-                <a href="index.html">Distribution GDL</a>
-                <hr class="sep">
-                <br><br>
-                <a href="#quartz">Comptoirs</a>
-                <a href="#lum">Luminaires</a>
-
-
-
-                <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
-                <a href="#cuisine">Éviers</a>
-                <a href="#plancher">Planchers</a>
-                <a href="#ceramique">Céramiques</a>
-                <a href="#electronique">Électroniques</a>
-                <a href="#autre">Poignées</a>
-                <a href="#bath">Bains</a>
-                <br><br><hr class="sep">
-                
-
-
-            </div>
-
-
-		</div>
-
-	</div>
-
-
-	<h1 class="main-txt-header animated fadeInDown">Distribution<br> GDL</h1>
-	<h2 class="sub-txt-header">Robineterie, luminaires, planchers et plus!</h2>
-	<div class="button-container">
-	<a href="#produits" class="button">VOIR LES PRODUITS</a>
-	</div>
+        
+            <ul class="nav">
+            <li class="navElement">
+                <a href="index.html"><h2 class="animated fadeInDown">CONTACT</h2></a>
+            </li>           
+            <li class="navElement">
+                <a id="drop" href="produits.html"><h2 class="animated fadeInDown">PRODUITS</h2></a>
+                <ul class="dropdown">
+                    <li><a href="#quartz">Comptoirs</a></li>
+                    <li><a href="#ceramique">Céramiques</a></li>
+                    <li><a href="#lum">Luminaires</a></li>
+                    <li><a href="#cuisine">Éviers</a></li>
+                    <li><a href="#plancher">Planchers</a></li>
+                    <li><a href="#electronique">Thermostats</a></li>
+                    <li><a href="#autre">Poignées</a></li>
+                    <li><a href="#bath">Bains</a></li>
+                    <li><a href="#rob">Robineterie</a></li>
+                </ul>
+            </li>
+            <li class="navElement">
+                <a href="index.html"><h2 class="animated fadeInDown">SERVICES</h2></a>
+            </li>
+            <li class="navElement">
+                <a href="index.html"><h2 class="animated fadeInDown">À PROPOS</h2></a>
+            </li>
+            </ul>
+        </div>
+        <!-- FIN DU NAVBAR-IN !-->
+<!-- DÉBUT DU SIDE-NAV MOBILE-RESPONSIVE !-->
+<div id="side-menu" class="side-nav">
+    <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Distribution GDL</a>
+        <hr class="sep"><br><br>
+        <a href="#quartz">Comptoirs</a>
+        <a href="#ceramique">Céramiques</a>
+        <a href="#lum">Luminaires</a>
+        <a href="#cuisine">Éviers</a>
+        <a href="#plancher">Planchers</a>
+        <a href="#electronique">Électroniques</a>
+        <a href="#autre">Poignées</a>
+        <a href="#bath">Bains</a>
+        <br><br><hr class="sep">
 </div>
+<!-- FIN DU SIDE-NAV MOBILE-RESPONSIVE !-->
+</div>
+<!-- FIN DU NAVBAR-IN !-->
+
+    <!-- TEXT HEADLINE  !-->
+    <h1 class="main-txt-header animated fadeInDown">Distribution<br> GDL</h1>
+    <h2 class="sub-txt-header">Robineterie, luminaires, planchers et plus!</h2>
+    <div class="button-container">
+    <a href="#produits" class="button">VOIR LES PRODUITS</a>
+    </div>
+    <!-- FIN DU NAVBAR !-->	
+</div>
+<!-- FIN DU HEADER !-->
 
 <!-- DÉBUT DU MAIN !-->
 
 <div class="main">
+
 	<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
-
-
-	<div id="produits" class="content-3">
-
-
-
-				<div class="prix">
-					
-					<h1>Produits</h1>
-					<hr id="sepa" class="sep">
-
-             <h2>Comptoirs</h2> <br> <br>
+<div id="produits" class="content-3">
+    <div class="prix">
+		<h1>Produits</h1>
+		<hr id="sepa" class="sep">
+        <h2>Comptoirs</h2> <br> <br>
 
         
-        <!-- DÉBUT THIRD GRID!--> 
-  <div id="quartz" class="grid1">
-
-   <div class="pg">
+<!-- DÉBUT GRID!--> 
+<div id="quartz" class="grid1">
+    <div class="pg">
             <img class="myImg" src="quartz/BL1107.jpg" alt="id: BL1107" class="card-img"/>
             <h4></h4>
         <p>Quartz</p>
@@ -326,8 +295,7 @@
     </div>
         <div class="pg">
             <img class="myImg" src="quartz/BL9006.jpg" alt="id: BL9006" class="card-img"/>
-            <h4></h4>
-            <br><hr><br>
+            <h4></h4>          
         <p>Quartz</p>
     </div>
         <div class="pg">
@@ -340,17 +308,14 @@
             <h4></h4>
         <p>Quartz</p>
     </div>
-
   </div>
-
-     <hr class="sep">           
+  <!-- FIN GRID!-->
+    <hr class="sep">           
     <h2>Céramiques</h2> <br> <br>
-
-        
-        <!-- DÉBUT THIRD GRID!--> 
-  <div id="ceramique" class="grid1">
-
-   <div class="pg">
+     
+        <!-- DÉBUT GRID!--> 
+<div id="ceramique" class="grid1">
+    <div class="pg">
             <img class="myImg" src="ceramique/2-MKG612574+.jpg" alt="id: 2-MKG612574+" class="card-img"/>
             <h4></h4>
         <p>Céramique de première qualité</p>
@@ -412,13 +377,12 @@
     </div>
 
   </div>
+<!-- FIN GRID!-->
 
-            <!-- luminaires !-->
+    <hr class="sep">
+    <h2>Luminaires</h2> <br> <br>
 
-        <hr class="sep">
-        <h2>Luminaires</h2> <br> <br>
-
-
+<!-- DÉBUT GRID!-->
 <div id="lum" class="grid1">
 
    <div class="pg">
@@ -442,7 +406,9 @@
         <p>Luminaire suspendu</p>
     </div>
 </div>
+<!-- FIN GRID!-->
 <br><hr><br>
+<!-- DÉBUT GRID!-->
 <div class="grid1">
     <div class="pg">
             <img class="myImg" src="lum/pendant/3.jpg" alt="" class="card-img"/>
@@ -465,7 +431,9 @@
         <p>Luminaire pendant</p>
     </div>
 </div>
+<!-- FIN GRID!-->
 <br><hr><br>
+<!-- DÉBUT GRID!-->
 <div class="grid1">
     <div class="pg">
             <img class="myImg" src="lum/panel/3.jpg" alt="" class="card-img"/>
@@ -494,8 +462,10 @@
             <h4></h4>
         <p>Blanc</p>
     </div>
-    </div>
+</div>
+<!-- FIN GRID!-->
 <br><hr><br>
+<!-- DÉBUT GRID!-->
 <div class="grid1">
         <div class="pg">
             <img class="myImg" src="lum/barn/1.jpg" alt="" class="card-img"/>
@@ -520,17 +490,13 @@
             <h4></h4>
         <p>Luminaire mural extérieur</p>
     </div>
-
-  </div>
-
-           <hr class="sep">
-          <h2>Éviers - Cuisine</h2> <br> <br>
-
-        
-        <!-- DÉBUT FOURTH GRID!--> 
-  <div id="cuisine" class="grid1">
-
-   <div class="pg">
+</div>
+<!-- FIN GRID!-->
+<hr class="sep">
+<h2>Éviers - Cuisine</h2> <br> <br>
+<!-- DÉBUT GRID!--> 
+<div id="cuisine" class="grid1">
+    <div class="pg">
             <img class="myImg" src="cuisine/CH3018grids.jpg" alt="id: CH3018" class="card-img"/>
             <h4></h4>
         <p>Évier avec grille</p>
@@ -551,15 +517,13 @@
         <p>Évier de cuisine</p>
     </div>
   </div>
-
  </div>
-    
-    <hr class="sep">      
-    <h2>Planchers chauffants</h2> <br> <br>
-
-  <div id="plancher" class="grid1">
-
-   <div class="pg">
+ <!-- FIN GRID!-->
+<hr class="sep">      
+<h2>Planchers chauffants</h2> <br> <br>
+<!-- DÉBUT GRID!-->
+<div id="plancher" class="grid1">
+    <div class="pg">
             <img class="myImg" src="mat/cable1.jpg" alt="id: Blue-cable" class="card-img"/>
             <h4>T-cable 120V bleu</h4>
             <p><select>
@@ -607,7 +571,9 @@
         <p>T-cable</p>
     </div>
 </div>
+<!-- FIN GRID!-->
 <br><hr><br>
+<!-- DÉBUT GRID!-->
 <div class="grid1">
     <div class="pg">
             <img class="myImg" src="mat/mat1.jpg" alt="id: Red-mat" class="card-img"/>
@@ -625,20 +591,13 @@
             <h4>Fiche technique</h4>
         <p>T-mat</p>
     </div>
-
-
-
-  </div>
- 
-
-  <hr class="sep">
-  <h2>Thermostats</h2> <br> <br>
-
-        
-        <!-- DÉBUT SECOND GRID!--> 
-  <div id="electronique" class="grid1">
-
-   <div class="pg">
+</div>
+<!-- FIN GRID!-->
+<hr class="sep">
+<h2>Thermostats</h2> <br> <br>
+ <!-- DÉBUT GRID!--> 
+<div id="electronique" class="grid1">
+    <div class="pg">
             <img class="myImg" src="thermo/GM4-2.jpg" alt="id: GM4" class="card-img"/>
             <h4></h4>
         <p>Thermostat pour planchers chauffants -avec GFCI pour 110V, 208V, 220V, 16A</p>
@@ -675,17 +634,11 @@
         <p>Comment est-ce que le GM4 fonctionne? Tout est ici!</p>
     </div>
   </div>
-
- 
-
-	
-
-   <hr class="sep">      
-    <h2>Poignées</h2> <br> <br>
-
-                
-                <!-- DÉBUT FIRST GRID!-->   
-    <div id="autre" class="grid1">
+  <!-- FIN GRID!-->
+<hr class="sep">      
+<h2>Poignées</h2> <br> <br>
+<!-- DÉBUT GRID!-->   
+<div id="autre" class="grid1">
         <div class="pg">
                 <img class="myImg" src="poignees/DT1103-SN.jpg" alt="id: DT1103-SN" class="card-img"/>
                 <h4></h4>
@@ -712,13 +665,11 @@
             <p>Poignée de porte pour passage <br> - fini: nickel satin</p>
         </div>
     </div>
+    <!-- FIN GRID!-->
 <hr class="sep">      
-    <h2>Bains</h2> <br> <br>
-
-
-    <div id="bath" class="grid1">
-
-   
+<h2>Bains</h2> <br> <br>
+<!-- DÉBUT GRID!-->
+<div id="bath" class="grid1">
     <div class="pg">
             <img class="myImg" src="bath/bath3.jpg" alt="" class="card-img"/>
             <h4></h4>
@@ -740,33 +691,71 @@
         <p>Bain</p>
     </div>
   </div>
+  <!-- FIN GRID!-->
 
+  <hr class="sep">      
+    <h2>Robineteries</h2> <br> <br>
 
+<!-- DÉBUT GRID!-->
+<div id="faucet" class="grid1">
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet1.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet2.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet3.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet6.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet5.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet4.png" alt="" class="card-img"/>
+            <h4></h4>
+        <p>Robinet</p>
+    </div>
+    <div class="pg">
+            <img class="myImg" src="faucet/faucet7.png" alt="" class="card-img"/>
+            <h4>Robinet</h4>
+        <p></p>
+    </div>
+  </div>
+  <!-- FIN GRID!-->
 
-
-
-
-				
-
-		</div>	
+		</div>
+        <!-- FIN PRIX!-->	
 	</div>
+    <!-- FIN CONTENT-3!-->
 </div>
+<!-- FIN MAIN!-->
 
+<!-- DÉBUT MODAL!-->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
+<!-- FIN MODAL!-->
+<!-- DÉBUT FOOTER!-->
 
 <footer> 
-  <h4> Distribution GDL | All Rights Reserved. 2018 | <a href="https://github.com/PeoFRTN">FRTN medias</a></h4>
+    <h4>Distribution GDL | All Rights Reserved. 2018 | <a href="https://github.com/PeoFRTN">FRTN medias</a></h4>
 </footer>
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="main.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -783,7 +772,7 @@
 
 <script>
 
-    window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -860,9 +849,7 @@ span.onclick = function() {
 </script>
 
 
-
-
-
-
 </body>
 </html>
+
+
