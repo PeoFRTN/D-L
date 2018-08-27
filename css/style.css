@@ -250,13 +250,13 @@ span:hover {
 	height: 100%;
 	background-color: #fff;
 	padding-bottom: 30px;
-	padding-top: 60px;
+	padding-top: 30px;
 
 }
 .content-2 {
 	height: auto;
 	background-color: #eef0f2;
-	padding-top: 60px;
+	padding-top: 30px;
 }
 .content-3 {
 	height: auto;
@@ -268,7 +268,7 @@ span:hover {
 	margin-top: 0;
 	height: 100%;
 	background-color: #eef0f2;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 	
 }
 .about {
