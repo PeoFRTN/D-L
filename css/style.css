@@ -223,7 +223,7 @@ span:hover {
 .button {
     background-color: #0BA2DB;
     opacity: 1;
-    border: solid 5px #fff;
+    border: solid 1px #fff;
     color: #fff;
     padding: 20px 42px;
     text-align: center;
@@ -235,6 +235,9 @@ span:hover {
     transition: 0.8s;
     margin-top: 50px;
     top: 900px;
+    -webkit-box-shadow: 0 4px 2px -2px gray;
+	-moz-box-shadow: 0 4px 2px -2px gray;
+	box-shadow: 0 4px 2px -2px gray;
 
 }
 
