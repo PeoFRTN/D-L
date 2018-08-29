@@ -3,22 +3,20 @@
 
 
  if (isset($_POST['submit'])) {
- name = $_POST['name'];$
- email = $_POST['email'];
- phone = $_POST['phone'];
- url = $_POST['url'];
- message = $_POST['message'];
+ $name = $_POST['name'];
+ $mailFrom = $_POST['email'];
+ $phone = $_POST['phone'];
+ $url = $_POST['url'];
+ $message = $_POST['message'];
 
 
-$mailTo ="pierre-olivier.fortin@hotmail.com";
+$mailTo ="info@distributiongdl.com";
 $headers = "From: ".$mailFrom;
-$txt = "You have received an e-mail from ".$name.".\n\n".$message;
+$txt = "You have received an e-mail from ".$name.".\n\n".$message.".\n\n".$phone.".\n\n".$url;
 
 
  mail($mailTo, $subject, $txt, $headers);
 
-
- header("Location: index.html?mailsend");
-
+ echo "Merci, \nNous vous contacterons très bientôt!";
 
  }
