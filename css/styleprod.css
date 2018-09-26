@@ -21,7 +21,7 @@ a:active {
 }
 .header {
 	display: block;
-	height: 100vh;
+	height: 10vh;
 	background-image: url("../img/intro-bg.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,14 +32,14 @@ a:active {
 	padding: 0;
 	height: 100px;
 	width: 100%;
- 	background-color: none;
+ 	background-color: #212121;
  	position: fixed;
  	transition: background-color 0.5s ease-in-out;
  	z-index: 1;
 }
 
 .navbar-color {
-	background-color: red;
+	background-color: white;
 }
 .navbar-in {
 	margin-left: 15px;
@@ -80,7 +80,7 @@ a:active {
 }
 
 .navbar h2:hover {
-
+	color: #ffffff;
 	border-bottom: solid 5px #0BA2DB;
 	transition: 0.3s;
 
@@ -174,18 +174,14 @@ a:active {
 .navElement h2 {
 	line-height: 60px;
 	font-size: 16px;
-	
-}
-.navElement h3 {
-	line-height: 60px;
-	font-size: 16px;
-	text-align: center;
+	color: #0BA2DB;
+
 	
 }
 
 
 .main-txt-header {
-	
+	display: none;
 	color: #0BA2DB;
 	font-size: 82px;
 	text-align :center;
@@ -203,7 +199,7 @@ span:hover {
 
 
 .sub-txt-header {
-	
+	display: none;
 	margin-top: 5px;
 	font-size: 26px;
 	text-align :center;
@@ -215,6 +211,7 @@ span:hover {
 }
 
 .button-container {
+	display: none;
 	text-align: center;
 	position: relative;
 	top: 50%;
@@ -269,18 +266,7 @@ span:hover {
 
 
 }
-.navbar-prod h3:hover {
-    background-color: #0BA2DB;
-    opacity: 0.8;
-    color: #fff;
-    transition: 0.3s;
-    transform: scale(1.2);
-    -webkit-box-shadow: 0 4px 2px -2px gray;
-	-moz-box-shadow: 0 4px 2px -2px gray;
-	box-shadow: 0 4px 2px -2px gray;
 
-
-}
 
 .navbar-prod {
     margin-left: auto;
@@ -304,16 +290,13 @@ span:hover {
 
 }
 .content-2 {
-	height: 100%;
+	height: auto;
 	background-color: #eef0f2;
 	padding-top: 18px;
-
 }
 .content-3 {
 	height: auto;
 	background-color: #fff;
-	padding-bottom: 60px;
-	padding-top: 30px;
 
 
 }
@@ -417,10 +400,11 @@ span:hover {
 
 .prix {
 	background-color: none;
+	padding-top: 20px;
 }
 .prix h1 {
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
 }
@@ -633,14 +617,18 @@ footer h4 {
 	}
     .navbar {
     	height: 60px;
-    }
 
-    .navElement h2{
+    }
+    
+
+    .navElement {
 		display: none;
 		transition: 0.5s;
     	}   
 
-
+	.header {
+		background-image: none;
+	}
 	
     .sub-txt-header {
     	margin-top: 10px;
@@ -717,19 +705,6 @@ footer h4 {
     background-color: #0BA2DB;
     transition: 0.2s;
     transform: scale(1.20);
-}
-.navbar-prod {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: hidden;
-    max-width: 1100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-
-
 }
 
 
